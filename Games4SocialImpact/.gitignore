@@ -6,6 +6,7 @@
 # My Packages
 MyPackages/
 
+# Core folders
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
