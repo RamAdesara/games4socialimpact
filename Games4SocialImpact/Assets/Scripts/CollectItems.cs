@@ -8,7 +8,7 @@ public class CollectItems : MonoBehaviour
 {
     public LayerMask pickable;
 
-    Dictionary<string, int> items = new Dictionary<string, int>
+    public Dictionary<string, int> items = new Dictionary<string, int>
     {
         {"Apple", 2},
         {"Bread", 1},
@@ -20,7 +20,7 @@ public class CollectItems : MonoBehaviour
         if (((1 << other.transform.gameObject.layer) & pickable) != 0)
         {
             string[] words = other.name.Split(' ');
-            
+
             if (items.ContainsKey(words[0]))
             {
                 items[words[0]]--;
