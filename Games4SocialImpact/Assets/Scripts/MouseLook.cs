@@ -16,6 +16,8 @@ public class MouseLook : MonoBehaviour
     GameObject pickedObject;
     bool isPicked = false;
 
+    public LayerMask collectible;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -67,7 +69,8 @@ public class MouseLook : MonoBehaviour
         }
     }
 
-    void Drop() {
+    void Drop()
+    {
         isPicked = false;
 
         if (pickedObject != null)
